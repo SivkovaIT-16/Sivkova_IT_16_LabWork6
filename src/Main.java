@@ -74,6 +74,7 @@ public class Main {
                 }
                 case 2: {
                     try{
+                        System.out.println("Класс Cat.");
                         Cat cat = new Cat();
                         cat.meow();
                         cat.play();
@@ -81,7 +82,9 @@ public class Main {
                     } catch (Exception e) {
                         System.out.println("Ошибка: " + e.getMessage());
                     }
+                    System.out.println();
                     try{
+                        System.out.println("Класс Counter.");
                         Counter counter = new Counter();
                         DefaultReflection.showDefault(counter);
                     } catch (Exception e) {
@@ -105,13 +108,16 @@ public class Main {
                 }
                 case 4: {
                     try {
+                        System.out.println("Класс Dog.");
                         Dog dog = new Dog("Бобик", "Овчарка", 5, "Чёрный");
                         dog.bark();
                         ValidateReflection.showValidation(dog);
                     } catch (Exception e) {
                         System.out.println("Ошибка: " + e.getMessage());
                     }
+                    System.out.println();
                     try{
+                        System.out.println("Класс Cat.");
                         Cat cat = new Cat("Мурзик", 4, "Чёрный");
                         cat.meow();
                         cat.play();
@@ -131,6 +137,7 @@ public class Main {
                     String color = Validator.checkString();
                     try {
                         Cat cat = new Cat(name, age, color);
+                        System.out.println("Создан кот: " + cat);
                         TwoReflection.showTwo(cat);
                     } catch (Exception e) {
                         System.out.println("Ошибка: " + e.getMessage());
