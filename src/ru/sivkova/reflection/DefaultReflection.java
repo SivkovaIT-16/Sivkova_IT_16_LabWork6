@@ -8,7 +8,7 @@ public class DefaultReflection {
      * расположенного над классом переданного объекта.
      *
      * @param object Объект, класс которого должен быть проверен на наличие аннотации {@link Default}.
-     * @throws IllegalArgumentException, если аннотация {@link Default} отсутствует или переданный объект пуст.
+     * @throws IllegalArgumentException, если аннотация {@link Default} отсутствует или переданный объект null.
      * @see Default
      */
     public static void showDefault(Object object) {

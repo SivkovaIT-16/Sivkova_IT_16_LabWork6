@@ -20,7 +20,7 @@ public class InvokeReflection {
      *     </ul>
      * </p>
      * @param object Объект, класс которого должен быть проверен на наличие аннотации {@link Invoke}
-     * @throws IllegalArgumentException если переданный объект пуст.
+     * @throws IllegalArgumentException если переданный объект null.
      * @see Invoke
      */
     public static void showInvoke(Object object) {

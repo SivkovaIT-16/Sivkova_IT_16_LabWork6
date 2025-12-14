@@ -14,8 +14,12 @@ public class CacheReflection {
      * расположенных над классом переданного объекта.
      *
      * @param object Объект, класс которого должен быть проверен на наличие аннотации {@link Cache}
-     * @throws IllegalArgumentException если аннотация @Cache не найдена, список
-     * кэшируемых областей пуст или переданный объект null.
+     * @throws IllegalArgumentException если:
+     *                                 <ul>
+     *                                    <li>переданный объект null</li>
+     *                                    <li>аннотация @Cache не найдена над классом объекта</li>
+     *                                    <li>Список кэшируемых областей пуст</li>
+     *                                 </ul>
      * @see Cache
      */
     public static void showCache(Object object) {

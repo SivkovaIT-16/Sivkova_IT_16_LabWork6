@@ -21,8 +21,8 @@ public class Main {
                     "4.Аннотация @Validate.\n" +
                     "5.Аннотация @Two.\n" +
                     "6.Аннотация @Cache.\n" +
-                    "7.Собрать точки в ломанную.\n" +
-                    "8.Сгруппировать людей.");
+                    "7.Тест @Invoke.\n" +
+                    "8.Тест @Two.");
             n = scanner.nextInt();
             scanner.nextLine();
             switch (n) {
@@ -170,6 +170,14 @@ public class Main {
                         System.out.println("Ошибка: " + e.getMessage());
                     }
                     System.out.println();
+                    break;
+                }
+                case 7: {
+                    System.out.println("Для запуска тестирования аннотации @Invoke нужно перейти в ru/sivkova/tests/TestInvoke.\n");
+                    break;
+                }
+                case 8: {
+                    System.out.println("Для запуска тестирования аннотации @Two нужно перейти в ru/sivkova/tests/TestTwo.\n");
                     break;
                 }
                 default: {

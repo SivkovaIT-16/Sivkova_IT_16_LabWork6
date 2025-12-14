@@ -24,7 +24,6 @@ public class ToStringReflection {
      * Если доступ к полю запрещен будет выброшено {@link RuntimeException}.
      *
      * @param obj Объект, класс которого должен быть проверен на наличие аннотации {@link ToString}
-     * @throws IllegalArgumentException если переданный объект пуст.
      * @see ToString
      * @see Mode
      */

@@ -11,8 +11,12 @@ public class ValidateReflection {
      * над переданным объектом.
      *
      * @param object Объект, класс которого должен быть проверен на наличие аннотации {@link Validate}
-     * @throws IllegalArgumentException если аннотация {@code @Validate} отсутствует,
-     * содержит пустой массив классов или переданный объект null.
+     * @throws IllegalArgumentException если:
+     *                                  <ul>
+     *                                    <li>переданный объект null</li>
+     *                                    <li>аннотация @Validate не найдена над классом объекта</li>
+     *                                    <li>аннотация @Validate содержит пустой массив классов</li>
+     *                                  </ul>
      * @see Validate
      */
     public static void showValidation(Object object) {
