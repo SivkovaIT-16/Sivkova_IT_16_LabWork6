@@ -12,7 +12,8 @@ import java.lang.annotation.Target;
  * конкретных имён кэшей, связанных с данным классом.
  * </p>
  */
-@Target(value = ElementType.TYPE) @Retention(value= RetentionPolicy.RUNTIME)
+@Target(value = ElementType.TYPE)
+@Retention(value= RetentionPolicy.RUNTIME)
 public @interface Cache {
     /**
      * Набор имён кэшей или ключевых пространств,

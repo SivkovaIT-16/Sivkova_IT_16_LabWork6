@@ -13,7 +13,8 @@ import java.lang.annotation.Target;
  * указанного класса по умолчанию.
  * </p>
  */
-@Target( {ElementType.TYPE, ElementType.FIELD} ) @Retention(value = RetentionPolicy.RUNTIME)
+@Target( {ElementType.TYPE, ElementType.FIELD} )
+@Retention(value = RetentionPolicy.RUNTIME)
 public @interface Default {
     /**
      * Класс, который считается как значение по умолчанию.

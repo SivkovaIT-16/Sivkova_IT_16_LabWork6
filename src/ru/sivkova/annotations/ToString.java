@@ -16,7 +16,8 @@ import java.lang.annotation.Target;
  * представление объекта если указано {@link Mode#YES}
  * </p>
  */
-@Target( {ElementType.TYPE, ElementType.FIELD} ) @Retention(value= RetentionPolicy.RUNTIME)
+@Target( {ElementType.TYPE, ElementType.FIELD} )
+@Retention(value= RetentionPolicy.RUNTIME)
 public @interface ToString {
     /**
      * Определяет, нужно ли включать объект в строковое представление.

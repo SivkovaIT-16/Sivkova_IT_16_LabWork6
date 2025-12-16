@@ -15,7 +15,8 @@ import java.lang.annotation.Target;
  * в проверку или обработку аннотации.
  * </p>
  */
-@Target( {ElementType.TYPE, ElementType.ANNOTATION_TYPE} ) @Retention(value= RetentionPolicy.RUNTIME)
+@Target( {ElementType.TYPE, ElementType.ANNOTATION_TYPE} )
+@Retention(value= RetentionPolicy.RUNTIME)
 public @interface Validate {
     /**
      * Массив классов, которые будут проверяться или использоваться

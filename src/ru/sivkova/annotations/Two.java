@@ -12,7 +12,8 @@ import java.lang.annotation.Target;
  * Может быть применена к классам. Доступна во время выполнения (RetentionPolicy.RUNTIME).
  * </p>
  */
-@Target(value = ElementType.TYPE) @Retention(value= RetentionPolicy.RUNTIME)
+@Target(value = ElementType.TYPE)
+@Retention(value= RetentionPolicy.RUNTIME)
 public @interface Two {
     /**
      * Строковое значение, которое будет храниться в аннотации.
